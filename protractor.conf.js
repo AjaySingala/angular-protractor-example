@@ -7,6 +7,7 @@ const HTMLReport = require('protractor-html-reporter-2');
 const fs = require('fs-extra');
 
 exports.config = {
+    directConnect: false,
     allScriptsTimeout: 11000,
     specs: [
         //'./e2e/**/*.spec.ts'
@@ -15,6 +16,15 @@ exports.config = {
     capabilities: {
         'browserName': 'chrome'
     },
+    // capabilities: {
+    //     'browserName': 'MicrosoftEdge',
+    //     'platform': 'windows'
+    // },
+    // multiCapabilities: [
+    //     { 'browserName': 'MicrosoftEdge', 'platform': 'windows' },
+    //     { 'browserName': 'chrome' }
+    //     // { 'browserName': 'firefox', 'marionette': true },
+    // ],
     directConnect: true,
     // baseUrl: 'http://localhost:4200/',
     baseUrl: 'http://juliemr.github.io/protractor-demo/',

@@ -3,7 +3,7 @@ exports.config = {
     framework: 'jasmine',
     seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: ['spec.js']
-  }
+}
 
 // // Browser = firefox. NOT WORKING!
 //   exports.config = {
@@ -15,29 +15,31 @@ exports.config = {
 //     }
 //   }
 
-// // Browser = Edge. NOT WORKING!
-//  exports.config = {
+// // Browser = Edge. WORKING!
+// exports.config = {
+//     //directConnect: false,
 //     framework: 'jasmine',
 //     seleniumAddress: 'http://localhost:4444/wd/hub',
-//     seleniumArgs: ['-Dwebdriver.ie.driver=node_modules/protractor/selenium/MicrosoftWebDriver.exe'],
 //     specs: ['spec.js'],
 //     capabilities: {
-//        'browserName': 'MicrosoftEdge',
-//        // javascriptEnabled=true,
-//        'platform': 'windows',
-//         'version': '11'
+//         'browserName': 'MicrosoftEdge',
+//         // javascriptEnabled=true,
+//         'platform': 'windows'
+//             // 'version': '11'
 //     }
 // }
 
 
-// // Multiple browsers. FIREFOX NOT WORKING!
-//   exports.config = {
+// // Multiple browsers. FF NOT WORKING!
+// exports.config = {
+//     directConnect: false,
 //     framework: 'jasmine',
-//     seleniumAddress: 'http://localhost:4444/wd/hub',
 //     specs: ['spec.js'],
-//     multiCapabilities: [{
-//       browserName: 'firefox'
-//     }, {
-//       browserName: 'chrome'
-//     }]
-//   }
+//     seleniumAddress: 'http://localhost:4444/wd/hub',
+
+//     multiCapabilities: [
+//         { 'browserName': 'chrome' },
+//         // { 'browserName': 'firefox', 'marionette': true },
+//         { 'browserName': 'MicrosoftEdge', 'platform': 'windows' }
+//     ]
+// };

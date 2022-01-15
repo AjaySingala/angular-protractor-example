@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "^8.2.5",
     "@angular/router": "^8.2.5",
     "core-js": "^3.2.1",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "rxjs": "^6.5.3",
     "ts-helpers": "^1.1.2",
     "tslib": "^1.10.0",
